@@ -1,0 +1,288 @@
+/* A área de login está fora do header. Como inserí-lo novamente?*/
+/* Como deixar responsivo? Mostrar como fica ao aumentar o 'inspecionar'*/
+/*Como colocar footer no final da página?*/
+/*Qual diferença entre align-items e justify-content?*/
+/*Como fazer com que uma div aumente de altura conforme os itens dentro desta div aumentam de tamanho ou são deslocados para cima ou baixo? */
+/*Como fazer a tela de cupons e propagandas? E como as imagens irem passando automaticamente?*/
+
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Montserrat&family=Roboto:wght@400;700&display=swap');
+.header {
+    background-color: rgb(197, 3, 1);
+    box-sizing: border-box;
+    height: 100px;
+    display: flex;
+    font-weight: bold;
+    font-family: Boogaloo, sans-serif;
+    font-size: 21px;
+    width: 100%;
+    top:0;
+    left: 0;
+}
+
+body { 
+    font-family: Boogaloo, sans-serif; /*Pq não funciona?*/
+    display:flex;
+    flex-direction: column;
+}
+
+#logo {
+    height: 100%;
+    width: 20%;
+    margin-left: 0;
+} 
+
+a {
+    color: rgb(254,184,0);
+    text-decoration: none;
+}
+
+.menu-inicial {
+    width: 60%;
+    padding: 20px;
+}
+
+.links-menu {
+    position: relative;
+    display: flex;
+    justify-content: space-between; 
+    width: 45%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.link-header {
+    padding: 15px;
+}
+
+.cadastro-login {
+    position: relative;
+    width: 20%;
+    right:2%;
+}
+
+.links-cadastro {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#inserir-endereco {
+    text-align: center;
+    height: 250px;
+    width: 100%;
+    background-color: rgb(254,184,0);
+}
+
+.tituloEndereco {
+    font-family: Boogaloo, sans-serif;
+    color: white;
+    padding: 30px;
+    font-size: 50px;
+}
+
+.endereco-cliente {
+    width: 40%;
+    height: 40px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    border: 0px;
+    color: rgb(106,105,110);
+    font-size: 14px;
+    white-space: nowrap; /*Pedir para explicar*/
+    position: relative;
+    font-family: Boogaloo, sans-serif;
+}
+
+.endereco-cliente::placeholder {
+    font-family: Boogaloo, sans-serif;
+}
+
+.botaoEndereco {
+    font-family: Boogaloo, sans-serif;
+    display: flex;
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgb(197, 3, 1);
+    color: white;
+    font-size: 18px;
+    border-radius: 3px;
+    border: solid 2px white;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#propaganda {                   /*Como fazer as divs ficarem exatamente uma abaixo da outra? Como fazer o header ficar na frente do body quando rolar a página para baixo?*/
+    position: relative;
+}
+
+#maisPedidos {
+    position: relative;
+    margin-top: 100px;
+}
+
+.tituloPedidos {
+    font-family: Boogaloo, sans-serif;
+    font-weight: bold;
+    color:rgb(197, 3, 1);
+    font-size: 25px;
+    text-align: center;
+    padding: 15px;
+}
+
+.comidas {
+    display: flex;
+    justify-content: space-between; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.cardapios {
+    display: flex;
+    box-sizing: border-box;
+    border: 1px solid red;
+    position: relative;
+    justify-content:space-between;
+    font-size: 50px;
+}
+
+.listaDeOpcoes {
+    position: relative;
+    font-size: 40px;
+    transition: display; 
+    margin-left: 50px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    justify-content:space-between;
+
+}
+
+.comidaBrasileira {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 40px;
+    /*border-top: 40px;
+    border-bottom: 40px;
+    border-left: 60px;
+    border-right: 80px;*/
+    border: solid;
+    padding: 20px;
+}
+
+
+
+.comidaJaponesa {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 40px;
+    /*border-top: 40px;
+    border-bottom: 40px;
+    border-left: 60px;
+    border-right: 80px;*/
+    border: solid;
+    padding: 20px;
+
+}
+
+.comidaMexicana {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 40px;
+    /*border-top: 40px;
+    border-bottom: 40px;
+    border-left: 60px;
+    border-right: 80px;*/
+    border: solid;
+    padding: 20px;
+}
+
+.fastfood {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 40px;
+    /*border-top: 40px;
+    border-bottom: 40px;
+    border-left: 60px;
+    border-right: 80px;*/
+    border: solid;
+    padding: 20px;
+}
+
+.sobremesas {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 40px;
+    /*border-top: 40px;
+    border-bottom: 40px;
+    border-left: 60px;
+    border-right: 80px;*/
+    border: solid;
+    padding: 20px;
+}
+
+.bebidas {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 40px;
+    /*border-top: 40px;
+    border-bottom: 40px;
+    border-left: 60px;
+    border-right: 80px;*/
+    border: solid;
+    padding: 20px;
+}
+
+footer {
+    background-color: rgb(197, 3, 1);
+    color: rgb(254,184,0);
+    height: 50px;
+    bottom: 0%; /* Pq ainda fica no meio ao invés de começar logo abaixo do cardápio?*/
+    width: 100%;
+    /*display: flex;
+    align-items: flex-end;*/
+}
+
+#rodape {
+    font-family: Boogaloo, sans-serif;
+    font-weight: bold;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    top: 50%;
+    width: 25%;
+    margin: auto;
+}
+
+#logo-rodape {
+    position: relative;
+    float:left;
+    left: 0;
+    max-width: 150px;
+    width: auto;
+    height: 50px; 
+}
+
+.escritosRodape {
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+
+
+
