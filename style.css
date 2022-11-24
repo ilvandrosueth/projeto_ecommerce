@@ -1,7 +1,7 @@
 /* A área de login está fora do header. Como inserí-lo novamente?*/
 /* Como deixar responsivo? Mostrar como fica ao aumentar o 'inspecionar'*/
 /*Como colocar footer no final da página?*/
-/*Qual diferença entre align-items e justify-content?*/
+
 /*Como fazer com que uma div aumente de altura conforme os itens dentro desta div aumentam de tamanho ou são deslocados para cima ou baixo? */
 /*Como fazer a tela de cupons e propagandas? E como as imagens irem passando automaticamente?*/
 
@@ -14,26 +14,23 @@
     font-weight: bold;
     font-family: Boogaloo, sans-serif;
     font-size: 21px;
-    position: absolute;
     width: 100%;
     top:0;
     left: 0;
 }
 
-body { 
-    font-family: Boogaloo, sans-serif; /*Pq não funciona?*/
+body,h2 { 
+    font-family: Boogaloo, sans-serif; 
+    display:flex;
+    flex-direction: column;
 }
 
 #logo {
     height: 100%;
-    width: 20%;
+    max-width: 250px;
+    width: auto;
     margin-left: 0;
-} 
-
-a {
-    color: rgb(254,184,0);
-    text-decoration: none;
-}
+}  
 
 .menu-inicial {
     width: 60%;
@@ -43,7 +40,6 @@ a {
 .links-menu {
     position: relative;
     display: flex;
-    justify-content: space-between; 
     width: 45%;
     top: 50%;
     transform: translateY(-50%);
@@ -51,6 +47,8 @@ a {
 
 .link-header {
     padding: 15px;
+    color: rgb(254,184,0);
+    text-decoration: none;
 }
 
 .cadastro-login {
@@ -67,16 +65,20 @@ a {
     transform: translateY(-50%);
 }
 
+.degradeVermelhoAmarelo {
+    height: 20px;
+    background: linear-gradient(rgb(197, 3, 1),rgb(254,184,0))
+}
+
 #inserir-endereco {
-    position: relative;
-    top: 100px;
     text-align: center;
     height: 250px;
-    background-color: rgb(254,184,0);
+    width: 100%;
+    background: rgb(254,184,0)
+    /* background-color: rgb(254,184,0); */
 }
 
 .tituloEndereco {
-    font-family: Boogaloo, sans-serif;
     color: white;
     padding: 30px;
     font-size: 50px;
@@ -114,13 +116,24 @@ a {
     cursor: pointer;
 }
 
-#propaganda {                   /*Como fazer as divs ficarem exatamente uma abaixo da outra? Como fazer o header ficar na frente do body quando rolar a página para baixo?*/
+.botaoEndereco:hover {
+    transition: 200ms;
+    transform: scale(1.05);
+    box-shadow: 0px 0.5px 10px black;
+}
+
+.degradeAmareloBranco {
+    height: 20px;
+    background: linear-gradient(rgb(254,184,0),white)
+}
+
+#propaganda {     
     position: relative;
 }
 
 #maisPedidos {
     position: relative;
-    margin-top: 100px;
+    padding: 50px;
 }
 
 .tituloPedidos {
@@ -134,7 +147,7 @@ a {
 
 .comidas {
     display: flex;
-    position: relative;
+    flex-wrap: wrap;
     justify-content: space-between; 
     margin-left: auto;
     margin-right: auto;
@@ -147,94 +160,92 @@ a {
 
 .imagem-comida {
     max-width:200px;
-    width: auto;
     height: 150px;
     border-radius: 8px;
     opacity: 0.5;
     transition: 200ms;
+    justify-content: center;
+}
+
+.tipoComida {
+    width: 180px;
+    height: 180px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 10px;
 }
 
 .tituloComida {
     position: relative;
-    top: 50%;
-    font-size: 20px;
+    font-size: 25px;
     font-family: Boogaloo, sans-serif;
-    color: rgb(197, 3, 1);
+    color: white;
     -webkit-text-stroke-width: 1px; 
     -webkit-text-stroke-color: #000; 
-    transition: 400ms;
+    transition: 200ms;
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    height: 100%;
+    width: 100%;
 }
 
-.comida-brasileira {
-    position: relative;
+.tipoComida.-comidaBrasileira {
+    background-image: url("comida-brasileira.jpg") ;
 }
 
-.comida-brasileira:hover {
+.tipoComida.-comidaJaponesa {
+    background-image: url("comida-japonesa.jpg") ;
+}
+
+.tipoComida.-comidaMexicana {
+    background-image: url("comida-mexicana.jpg") ;
+}
+
+.tipoComida.-fastFood {
+    background-image: url("fast-food.jpg") ;
+}
+
+.tipoComida.-sobremesas {
+    background-image: url("sobremesas.jpg") ;
+}
+
+.tipoComida.-sucos {
+    background-image: url("sucos.jpg") ;
+}
+
+.tipoComida:hover {
     opacity: 1;
     transform: scale(1.1);
 }
 
-.comida-brasileira:hover .tituloComida {
-    color: rgb(197, 3, 1);
+.tipoComida:hover .tituloComida {
+    color: white;
+    transform: scale(1.5);
+    opacity: 1;
+    z-index: 999;
+}
+
+.tipoComida:hover .imagem-comida {
     transform: scale(1.1);
     opacity: 1;
 }
 
-.comida-brasileira:hover .imagem-comida {
-    transform: scale(1.1);
-    opacity: 1;
+.degradeBrancoVermelho {
+    height: 20px;
+    background: linear-gradient(white,rgb(197, 3, 1))
 }
-
-/* .comida-japonesa {
-    position: relative;
-}
-
-.comida-japonesa:hover {
-    transform: scale(1.1); 
-}
-
-.comida-mexicana {
-    position: relative;
-}
-
-.comida-mexicana:hover {
-    transform: scale(1.1); 
-}
-
-.fast-food {
-    position: relative;
-}
-
-.fast-food:hover {
-    transform: scale(1.1); 
-}
-
-.sobremesas {
-    position: relative;
-}
-
-.sobremesas:hover {
-    transform: scale(1.1);  
-}
-
-.bebidas {
-    position: relative;
-}
-
-.bebidas:hover {
-    transform: scale(1.1);  
-} */
 
 footer {
     background-color: rgb(197, 3, 1);
     color: rgb(254,184,0);
     height: 50px;
-    position: absolute;
-    top: 100%;
     width: 100%;
-    display:flex;
+    display: flex;
 }
 
 #rodape {
@@ -243,7 +254,6 @@ footer {
     display: flex; 
     align-items: center;
     justify-content: space-between;
-    top: 50%;
     width: 25%;
     margin: auto;
 }
@@ -258,9 +268,11 @@ footer {
 }
 
 .escritosRodape {
-    top: 50%;
-    transform: translateY(-50%); 
+    color: rgb(254,184,0);
+    text-decoration: none;
+} 
+
+.ajuste {
+    object-fit: cover;
 }
-
-
 
