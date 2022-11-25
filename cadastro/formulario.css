@@ -1,0 +1,214 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Montserrat&family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: rgb(197, 3, 1);
+    box-sizing: border-box;
+    height: 100px;
+    display: flex;
+    font-weight: bold;
+    font-family: Boogaloo, sans-serif;
+    font-size: 21px;
+    width: 100%;
+    top:0;
+    left: 0;
+}
+
+body,h2 { 
+    font-family: Boogaloo, sans-serif; 
+    display:flex;
+    flex-direction: column;
+}
+
+#logo {
+    height: 100%;
+    max-width: 250px;
+    width: auto;
+    margin-left: 0;
+} 
+
+.menu-inicial {
+    width: 60%;
+    padding: 20px;
+}
+
+.links-menu {
+    position: relative;
+    display: flex;
+    justify-content: space-between; 
+    width: 45%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.link-header {
+    padding: 15px;
+    color: rgb(254,184,0);
+    text-decoration: none;
+}
+
+.cadastro-login {
+    position: relative;
+    width: 20%;
+    right:2%;
+}
+
+.links-cadastro {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.degradeVermelhoAmarelo {
+    height: 20px;
+    background: linear-gradient(rgb(197, 3, 1),rgb(254,184,0))
+}
+
+.faixaTitulo {
+    background-color: rgb(254,184,0);
+}
+
+.tituloPagina {
+    margin-top: 10px;
+    margin-left: 7%;
+    display: flex;
+    flex-direction: column;
+}
+
+#título {
+    font-family: Boogaloo, sans-serif;
+    color: rgb(197, 3, 1);
+}
+
+#subtítulo {
+    font-family:Boogaloo, sans-serif;
+    color: rgb(197, 3, 1);
+}
+
+.degradeAmareloBranco {
+    height: 20px;
+    background: linear-gradient(rgb(254,184,0),white)
+}
+
+fieldset {
+    border:0;
+} 
+
+.camposFormulario {
+    background-color: white;
+    font-family: Boogaloo, sans-serif;
+    font-size: 1em;
+    color: rgb(197, 3, 1);
+    margin-left: 10%;
+}
+
+input, select, button {
+    border-radius: 5px;
+}
+  
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+ margin-bottom: 0.2em;
+ color:rgb(197, 3, 1);
+ display: block;
+}
+
+fieldset.grupo .campo {
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo select {
+padding: 0.2em;
+border: 1px solid rgb(197, 3, 1);
+box-shadow: 2px 2px 2px rgb(197, 3, 1);
+display: block;
+}
+
+.campo input [type="number"] {
+    padding: 0.2em;
+    border: 1px solid rgb(197, 3, 1);
+    box-shadow: 2px 2px 2px rgb(197, 3, 1);
+    display: block;
+}
+
+.campo select option {
+    padding-right:1em;
+}
+
+.campo input:focus, .campo select:focus {
+    background-color: aliceblue;
+}
+
+.botao {
+    font-family: Boogaloo, sans-serif;
+    font-size: 1.2em;
+    background-color: rgb(197, 3, 1);
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding:0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0,2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0,5);
+    top: 80%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate (-50%, 50%)
+    
+}
+
+.botao:hover {
+    background: rgb(197, 3, 1);
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0,2);
+    text-shadow: none;
+    transform: scale(1.1);
+}
+
+.degradeBrancoVermelho {
+    height: 20px;
+    background: linear-gradient(white,rgb(197, 3, 1))
+
+}
+
+footer {
+    background-color: rgb(197, 3, 1);
+    color: rgb(254,184,0);
+    height: 50px;
+    width: 100%;
+    display: flex;
+  
+}
+
+#rodape {
+    font-family: Boogaloo, sans-serif;
+    font-weight: bold;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+    margin: auto;
+}
+
+#logo-rodape {
+    position: relative;
+    float:left;
+    left: 0;
+    max-width: 150px;
+    width: auto;
+    height: 50px; 
+}
+
+.escritosRodape {
+    color: rgb(254,184,0);
+    text-decoration: none;
+}
