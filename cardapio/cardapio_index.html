@@ -5,9 +5,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>TastyFood</title>
-		<link rel="stylesheet" href="./cardapio_style.css">
-		<link rel="stylesheet" href="reset.css">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="cardapioStyle.css">
+		
 		<title>TastyFood</title>
 	</head>
 
@@ -16,43 +17,77 @@
 			<img id ="logo" src="Logo.jpg">
 			<div class="menu-inicial"> 
 				<div class="links-menu">
-					<p><a class="link-header" href="#">Cardápio</a></p>
+					<p><a class="link-header" href="../cardapio/cardapio_index.html">Cardápio</a></p>
 					<p><a class="link-header" href="#">Trabalhe Conosco</a></p>
-					<p><a class="link-header" href="#">Sobre nós</a></p>
 				</div>
 			</div>
 
 			<div class="cadastro-login">
 				<div class="links-cadastro">
-					<p><a href="#">Cadastre-se</a></p>
-					<p><a href="#">Login</a></p>
-					<p><a href="#">Sacola</a></p>
+					<p><a class="link-header" href="../cadastro/formulário.html">Cadastre-se</a></p>
+					<p><a class="link-header" href="../login/login_index.html">Login</a></p>
+					<p><a class="link-header" href="#">Sacola</a></p>
 				</div>
 			</div>
 		</header>
+		<div class="degradeVermelhoAmarelo">
+				
+		</div>
+
 		<div id="inserir-endereco">
 			<h2 class="tituloEndereco">Está na hora de um Tasty! Onde você está?</h2>
 			<input type="endereco-cliente" id="endereco-cliente" class="endereco-cliente" required placeholder="Insira seu endereço aqui.">
 			<button class="botaoEndereco">Confirmar endereço</button>
 		</div> 	
-		<div class="cardapios">
-				<ul class="listaDeOpcoes">
-					<li class="comidaBrasileira">Comida Brasileira</li>
-					<li class="comidaJaponesa">Comida Japonesa</li> 
-					<li class="comidaMexicana">Comida Mexicana</li>
-					<li class="fastfood">Fast-food</li>
-					<li class="sobremesas">Sobremesas</li>
-					<li class="bebidas">Bebidas</li>
-					<li></li>
-				</ul>
-			</div>
-			<footer>
-				<img id ="logo-rodape" src="Logo.jpg">
-				<div id="rodape">
-					<p><a class="escritosRodape" href="#">Fale Conosco</a></p>
-					<p><a class="escritosRodape" href="#">Sobre a Empresa</a></p>
-					<p><a class="escritosRodape" href="#">Trabalhe Conosco</a></p>
+		<div class="degradeAmareloBranco">
+
+		</div>
+		<div id="cardapios">
+				<div class="listaDeOpcoes">
+					<div class="comida">
+						<div class="tipoComida -comidaBrasileira">
+							<a class="tituloComida" href="brasileira/cardapio_brasileira.html">Comida Brasileira</a> <!-- Como fazer para toda a imagem ser um link?-->
+						</div>
+					</div>
+					<div class="comida">
+						<div class="tipoComida -comidaJaponesa">
+							<a class="tituloComida" href="japonesa/cardapio_japonesa.html">Comida Japonesa</a>
+						</div>
+					</div>
+					<div class="comida">
+						<div class="tipoComida -comidaMexicana">
+							<a class="tituloComida" href="mexicana/cardapio_mexicana.html">Comida Mexicana</a>
+						</div>
+					</div>
+					<div class="comida">
+						<div class="tipoComida -fastFood">
+							<a class="tituloComida">Fast-food</a>
+						</div>
+					</div>
+					<div class="comida">
+						<div class="tipoComida -sobremesas">
+							<a class="tituloComida">Sobremesas</a>
+						</div>
+					</div>
+					<div class="comida">
+						<div class="tipoComida -sucos">
+							<a class="tituloComida">Bebidas</a>
+						</div>
+					</div>
 				</div>
+			</div>
+
+		<div class="degradeBrancoVermelho">
+			
+		</div>
+	
+		<footer>
+			<img id ="logo-rodape" src="Logo.jpg">
+			<div id="rodape">
+				<p><a class="escritosRodape" href="#">Fale Conosco</a></p>
+				<p><a class="escritosRodape" href="#">Sobre a Empresa</a></p>
+				<p><a class="escritosRodape" href="#">Trabalhe Conosco</a></p>
+			</div>
 		</footer>
 		
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
