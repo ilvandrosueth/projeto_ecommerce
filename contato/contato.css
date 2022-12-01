@@ -1,0 +1,259 @@
+/* Como deixar responsivo? Mostrar como fica ao aumentar o 'inspecionar'*/
+/*Como colocar footer no final da página?*/
+/*Qual diferença entre align-items e justify-content?*/
+/*Como fazer com que uma div aumente de altura conforme os itens dentro desta div aumentam de tamanho ou são deslocados para cima ou baixo? */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Montserrat&family=Roboto:wght@400;700&display=swap');
+.header {
+    background-color: rgb(197, 3, 1);
+    box-sizing: border-box;
+    height: 100px;
+    display: flex;
+    font-weight: bold;
+    font-family: Boogaloo, sans-serif;
+    font-size: 21px;
+    width: 100%;
+    top:0;
+    left: 0;
+}
+
+body, h2 { 
+    font-family: Boogaloo, sans-serif; 
+    display: flex;
+    flex-direction: column;
+}
+
+#logo {
+    height: 100%;
+    max-width: 250px;
+    width: auto;
+    margin-left: 0;
+} 
+
+.menu-inicial {
+    width: 80%;
+    padding: 20px;
+}
+
+.links-menu {
+    position: relative;
+    display: flex;
+    width: 80%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.link-header {
+    padding: 15px;
+    color: rgb(254,184,0);
+    text-decoration: none;
+}
+
+.cadastro-login {
+    position: relative;
+    width: 25%;
+    right:2%;
+}
+
+.links-cadastro {
+    position: relative;
+    display: flex;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.degradeVermelhoAmarelo {
+    height: 20px;
+    background: linear-gradient(rgb(197, 3, 1),rgb(254,184,0))
+}
+
+.secaoCadastro {
+    text-decoration: none;
+}
+
+#inserir-endereco {
+    text-align: center;
+    height: 250px;
+    width: 100%;
+    background-color: rgb(254,184,0);
+}
+
+.tituloEndereco {
+    color: white;
+    padding: 30px;
+    font-size: 50px;
+}
+
+.endereco-cliente {
+    width: 40%;
+    height: 40px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    border: 0px;
+    color: rgb(106,105,110);
+    font-size: 14px;
+    white-space: nowrap; 
+    position: relative;
+}
+
+.endereco-cliente::placeholder {
+    font-family: Boogaloo, sans-serif;
+}
+
+.botaoEndereco {
+    font-family: Boogaloo, sans-serif;
+    display: flex;
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgb(197, 3, 1);
+    color: white;
+    font-size: 18px;
+    border-radius: 3px;
+    border: solid 2px white;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.botaoEndereco:hover {
+    transition: 200ms;
+    transform: scale(1.05);
+    box-shadow: 0px 0.5px 10px black;
+}
+
+.degradeAmareloBranco {
+    height: 20px;
+    background: linear-gradient(rgb(254,184,0),white)
+}
+
+.tituloPagina {
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(white, rgb(197, 3, 1),white);
+    color: white;
+}
+
+.camposContato {
+    margin: auto;
+}
+
+.informacoes {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.email {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.mensagem {
+    padding-bottom: 10px;
+}
+
+#mensagem {
+    height: 400px;
+    width: 400px;
+}
+
+
+.campo {
+    padding: 10px;
+}
+
+.tituloCarta {
+    font-size: 20px;
+}
+
+.anexarCv {
+    padding: 35px;
+}
+
+#carta {
+    width: 800px;
+    height: 500px;
+    border-radius: 5px;
+    border: 4px;
+}
+
+#anexarCurriculo {
+    font-family: Boogaloo, sans-serif;
+    display: flex;
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgb(197, 3, 1);
+    color: white;
+    font-size: 18px;
+    border-radius: 3px;
+    border: solid 2px rgb(254,184,0);
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.enviarMensagem {
+    font-family: Boogaloo, sans-serif;
+    display: flex;
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgb(197, 3, 1);
+    color: white;
+    font-size: 18px;
+    border-radius: 3px;
+    border: solid 2px rgb(254,184,0);
+    padding: 5px;
+    cursor: pointer;
+}
+
+.enviarMensagem:hover {
+    transition: 200ms;
+    transform: scale(1.05);
+    box-shadow: 0px 0.5px 10px black;
+}
+
+.degradeBrancoVermelho {
+    height: 20px;
+    background: linear-gradient(white,rgb(197, 3, 1));
+}
+
+footer {
+    background-color: rgb(197, 3, 1);
+    color: rgb(254,184,0);
+    height: 50px;
+    bottom: 0%; 
+    width: 100%;
+    display: flex;
+}
+
+#rodape {
+    font-family: Boogaloo, sans-serif;
+    font-weight: bold;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+    margin: auto;
+}
+
+#logo-rodape {
+    position: relative;
+    float:left;
+    left: 0;
+    max-width: 150px;
+    width: auto;
+    height: 50px; 
+}
+
+.escritosRodape {
+    color: rgb(254,184,0);
+    text-decoration: none;
+} 
+
+
+
+
+
+
